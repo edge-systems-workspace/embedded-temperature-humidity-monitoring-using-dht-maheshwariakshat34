@@ -23,6 +23,11 @@ void setup() {
 void loop() {
     float humidity = dht.readHumidity();
     float temperature = dht.readTemperature();
+    if (isnan(humidity) || isnan(temperature)) {
+        Serial.println("Humidity or temperature read error");
+        delay(2000);
+        return;
+    }
 
 
 }
