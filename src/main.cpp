@@ -28,6 +28,13 @@ void loop() {
         delay(2000);
         return;
     }
+    Serial.print("Humidity: ");
+    Serial.print(humidity);
+    Serial.print(" %\t");
+    Serial.print("Temperature: ");
+    Serial.print(temperature);
+    Serial.println(" *C");
+    delay(2000);
 
 
 }
